@@ -1,0 +1,773 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: "pts-b";
+    src: url("asset/font/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "pts-bi";
+    src: url("asset/font/PTSerif-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "pts-i";
+    src: url("asset/font/PTSerif-Italic.ttf");
+}
+
+@font-face {
+    font-family: "pts-r";
+    src: url("asset/font/PTSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "abril";
+    src: url("asset/font/AbrilFatface-Regular.ttf");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.cb {
+    clear: both;
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, #0f0700, #1d0d00);
+    color: white;  
+    padding: 0 90px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+header .icon {
+    display: flex;
+    justify-items: space-between;
+    gap: 80px;
+}
+
+header .icons {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+header .icon .icons:hover {
+    transform: scale(1.3);
+}
+
+/* Banner */
+.carousel-inner .carousel-item {
+    height: calc(100vh - 100px); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-inner .carousel-item.one {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.378), rgb(20, 18, 15)), url("asset/gambar/bannerKuliner.jpeg");
+}
+
+.carousel-inner .carousel-item.two {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.378), rgb(20, 18, 15)), url("asset/gambar/bannerKuliner2.jpg");
+}
+
+.carousel-inner .carousel-item.three {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.378), rgb(20, 18, 15)), url("asset/gambar/bannerKuliner3.jpeg");
+}
+
+.carousel-inner .carousel-container {
+    height: 95%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    text-align: center;
+}
+
+.carousel-inner .carousel-title {
+    font-size: 6em;
+    font-family: "pts-bi";
+}
+
+.carousel-inner .caption {
+    font-size: 1.3em;
+    font-family: "pts-i";
+}
+
+/* PENGANTAR DAN NAV */
+.p-dan-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(20, 18, 15);
+    color: white;
+    margin: 0 auto;
+    height: calc(100vh + 150px);
+    padding: 100px;
+    font-family: "pts-r";
+}
+
+.container-pengantar {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    border: 1px solid white;
+    margin-bottom: 60px;
+}
+
+.container-pengantar .text-pengantar {
+    width: 60%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.judul-pengantar, .judul-nav {
+    font-size: 2.5em;
+    font-family: "abril";
+}
+
+.container-pengantar .gambar-pengantar {
+    background-image: url("asset/gambar/pengantar.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+}
+
+.judul-nav {
+    margin-bottom: 30px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40%;
+    gap: 30px;
+}
+
+.container-nav .nav-button a, .container-nav .nav-button a:hover, .container-nav .nav-button a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-button {
+    width: 25%;
+    height: 100%;
+    border: 2px solid white;
+    background-color: black;
+    transition: all 0.7s ease 0s;
+    -webkit-transition: all 0.5s;
+}
+
+.nav-button:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);;
+    transform: scale(1.1);
+}
+
+.nav-button a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button a .gambar-nav {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: "abril";
+    font-size: 2.3em;
+}
+
+.nav-button .gambar-nav.dishes {
+    background-image: linear-gradient(180deg, transparent, rgb(0, 0, 0)), url("asset/gambar/navmakanberat.jpg");
+}
+
+.nav-button .gambar-nav.snack {
+    background-image: linear-gradient(180deg, transparent, rgb(0, 0, 0)), url("asset/gambar/pisang\ goreng.jpeg");
+}
+
+.nav-button .gambar-nav.drinks {
+    background-image: linear-gradient(180deg, transparent, rgb(0, 0, 0)), url("asset/gambar/escendol.jpeg"); 
+}
+
+.gradient-batas.satu {
+    background-image: linear-gradient(180deg, rgb(20, 18, 15), #f6e3d0);
+    height: 80px;
+}
+
+/* MAKANAN */
+.makanan-berat {
+    padding: 70px 100px 100px 100px;
+    background-color: #f6e3d0;
+    color: #4e361c;
+}
+
+.minuman-khas {
+    padding: 100px;
+    background-color: #f6e3d0;
+    color: #4e361c;
+}
+
+.snacks {
+    padding: 100px;
+    background-color: #503c28;
+    color: #ffe2c3;
+}
+
+.container-judul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.container-judul .judul {
+    font-size: 2.5em;
+    font-family: "abril";
+}
+
+.container-judul .view {
+    font-size: 1.3em;
+    font-family: "abril";
+}
+
+.container-judul.mberat, .container-judul.minuman {
+    border-bottom: 2px solid #4e361c;
+}
+
+.container-judul.snacks{
+    border-bottom: 2px solid #ffe2c3;
+}
+
+/* MAKANAN BERAT & MINUMAN */
+.container-collapse {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: "pts-r";
+}
+
+.d-inline-flex:hover {
+    cursor: pointer;
+}
+
+.detail-button {
+    font-weight: bold;
+}
+
+.collapse {
+    border: 0.5px solid black;
+}
+
+.collapse-body {
+    padding: 10px;
+}
+
+.border {
+    height: 40px;
+    width: 100%;
+    background-color: #ecbe90;
+    margin: 50px 0;
+}
+
+/* MAKANAN BERAT */
+.container-collapse .makanan {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 18%;
+}
+
+.makanan .gambar-makan {
+    color: white;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: "abril";
+    font-size: 2em;
+}
+
+.makanan .gambar-makan.satu {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/bakso.jpg");
+}
+
+.makanan .gambar-makan.dua {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/soto.jpg");
+}
+
+.makanan .gambar-makan.tiga {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/gado2.jpg");
+}
+
+.makanan .gambar-makan.empat {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/sate.jpeg");
+}
+
+.makanan .gambar-makan.lima {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/nasigoreng.jpg");
+}
+
+.makanan .d-inline-flex {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: "pts-b";
+    font-size: 1.2em;
+}
+
+.makanan-berat .container-populer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 1px solid #4e361c;
+}
+
+.makanan-berat .container-populer .gambar-populer {
+    width: 65%;
+}
+
+.makanan-berat .container-populer .gambar-populer img {
+    width: 100%;
+    height: 100%;
+}
+
+.makanan-berat .container-populer .text-populer {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    padding: 30px;
+    gap: 10px;
+    justify-content: space-between;
+    font-family: "pts-r";
+}
+
+.makanan-berat .text-populer .judul {
+    font-size: 2.5em;
+    font-family: "pts-b";
+}
+
+.makanan-berat .text-populer .intro {
+    font-size: 1.7em;
+    font-family: "pts-bi";
+}
+
+/* MINUMAN */
+.container-collapse .minuman {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 18%;
+}
+
+.minuman .gambar-minum {
+    color: white;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: "abril";
+    font-size: 2em;
+}
+
+.minuman .gambar-minum.satu {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/kopitubruk.jpg");
+}
+
+.minuman .gambar-minum.dua {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/wedangjahe.jpg");
+}
+
+.minuman .gambar-minum.tiga {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/bajigur.jpg");
+}
+
+.minuman .gambar-minum.empat {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/sekoteng.jpg");
+}
+
+.minuman .gambar-minum.lima {
+    background-image: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.842)), url("asset/gambar/eskelapa.jpg");
+}
+
+.minuman .d-inline-flex {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: "pts-b";
+    font-size: 1.2em;
+}
+
+.minuman-khas .container-populer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 1px solid #4e361c;
+}
+
+.minuman-khas .container-populer .gambar-populer {
+    width: 70%;
+}
+
+.minuman-khas .container-populer .gambar-populer img {
+    width: 100%;
+    height: 100%;
+}
+
+.minuman-khas .container-populer .text-populer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    padding: 30px;
+    gap: 10px;
+    justify-content: space-between;
+    font-family: "pts-r";
+}
+
+.minuman-khas .text-populer .judul {
+    font-size: 2em;
+    font-family: "pts-b";
+}
+
+.minuman-khas .text-populer .intro {
+    font-size: 1.3em;
+    font-family: "pts-bi";
+}
+
+/* SNACKS */
+.container-snacks {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    gap: 25px;
+}
+
+.container-snacks .snack {
+    width: 47%;
+    height: 200px;
+    display: flex;
+    border: 2px solid #ffe2c3;
+    transition: all 0.3s ease 0s;
+}
+
+.container-snacks .snack:hover {
+    border: 2px solid #ffe2c3;
+    background-color: #ffe2c3;
+    color: #503c28;
+    transform: translateY(-7px);
+}
+
+.snack .gambar-snack {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-right: 2px solid #ffe2c3;
+    font-family: "abril";
+    font-size: 2.5em;
+}
+
+.snack .text-snack {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "pts-r";
+}
+
+.snack.satu .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/cireng.jpg");
+}
+
+.snack.dua .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/klepon.jpg");
+}
+
+.snack.tiga .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/rempeyek.jpeg");
+}
+
+.snack.empat .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/keripiktempe.jpg");
+}
+
+.snack.lima .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/martabaktelur.jpg");
+}
+
+.snack.enam .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/batagor.jpg");
+}
+
+.snack.tujuh .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/Lemper.jpg");
+}
+
+.snack.delapan .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/otak2.jpg");
+}
+
+.snack.sembilan .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/pempek.jpeg");
+}
+
+.snack.sepuluh .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/kuelumpur.jpg");
+}
+
+.snack.sebelas .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/putumayang.jpg");
+}
+
+.snack.duabelas .gambar-snack {
+    background-image: linear-gradient(180deg, transparent 35%, rgb(0, 0, 0)), url("asset/gambar/dodol.jpeg");
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 200px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1a0b00;
+    color: white;
+}
+
+footer .logo img {
+    max-width: 200px
+}
+
+
+@media (max-width: 1200px) {
+    .p-dan-nav {
+        height: calc(100vh + 200px);
+    }
+
+    .p-dan-nav .container-pengantar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-dan-nav .text-pengantar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .p-dan-nav .gambar-pengantar {
+        display: none;
+    }
+
+    .p-dan-nav .container-nav .nav-button .gambar-nav {
+        font-size: 2em;
+    }
+
+    .makanan-berat, .snacks, .minuman-khas {
+        height: auto;
+    }
+
+    .container-collapse {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .container-collapse .makanan, .container-collapse .minuman {
+        width: 45%;
+    }
+
+    .makanan-berat .container-populer, .minuman-khas .container-populer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .makanan-berat .container-populer .gambar-populer, .minuman-khas .container-populer .gambar-populer {
+        width: 100%;
+    }
+
+    .makanan-berat .container-populer .text-populer, .minuman-khas .container-populer .text-populer {
+        width: 100%;
+    }
+
+    .snacks .container-snacks .snack {
+        width: 100%;
+        height: 300px;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 800px) {
+    header .icon .icon2, header .icon .icon3 {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item .carousel-title {
+        font-size: 4em;
+    }
+
+    .carousel-inner .carousel-item .caption {
+        display: none;
+    }
+
+    .p-dan-nav {
+        height: auto;
+        padding: 50px;
+    }
+
+    .p-dan-nav .container-pengantar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .p-dan-nav .text-pengantar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .p-dan-nav .gambar-pengantar {
+        display: none;
+    }
+
+    .p-dan-nav .container-nav .nav-button {
+        width: 30%;
+        height: 150px;
+    }
+
+    .p-dan-nav .container-nav .nav-button .gambar-nav {
+        font-size: 1.3em;
+    }
+
+    .container-judul .view {
+        font-size: 1.2em;
+    }
+
+    .container-collapse .makanan, .container-collapse .minuman {
+        width: 80%;
+    }
+
+    .minuman-khas .container-populer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-populer .text-populer {
+        text-align: center;
+    }
+
+    .container-populer .text-populer .judul {
+        font-size: 1.5em;
+    }
+
+    .container-populer .text-populer .intro {
+        font-size: 1em;
+    }
+
+    .makanan-berat, .minuman-khas, .snacks {
+        padding: 20px;
+    }
+
+    .snacks .container-snacks .snack {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        font-size: 0.9em;
+    }
+
+    .snack .gambar-snack {
+        width: 100%;
+        height: 70%;
+        border-bottom: 2px solid #ffe2c3;
+    }
+
+    .snack .text-snack {
+        width: 100%;
+        height: 30%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-dan-nav {
+        height: auto;
+        padding: 20px;
+    }
+
+    .p-dan-nav .container-nav {
+        flex-wrap: wrap;
+    }
+
+    .p-dan-nav .container-nav .nav-button {
+        width: 100%;
+        height: 200px;
+    }
+
+    .p-dan-nav .container-nav .nav-button .gambar-nav {
+        font-size: 3em;
+    }
+
+    .makanan-berat, .minuman-khas, .snacks {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,496 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: "pts-b";
+    src: url("asset/font/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "pts-bi";
+    src: url("asset/font/PTSerif-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "pts-i";
+    src: url("asset/font/PTSerif-Italic.ttf");
+}
+
+@font-face {
+    font-family: "pts-r";
+    src: url("asset/font/PTSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "abril";
+    src: url("asset/font/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "shadows";
+    src: url("asset/font/ShadowsIntoLightTwo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "creation";
+    src: url("asset/font/Creattion\ Demo.otf");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    font-family: "pts-r";
+}
+
+.cb {
+    clear: both;
+}
+
+/*HEADER*/
+header .nav {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, #0f0700, #1d0d00);
+    color: white;
+    padding: 0 80px;
+}
+
+header .nav .logo img {
+    max-width: 100px;
+}
+
+header .nav .icons {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+header .nav .icons:hover {
+    transform: scale(1.3);
+}
+
+/* Banner */
+.banner {
+    height: calc(100vh - 100px);
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(23, 17, 13, 0.696), rgba(23, 17, 13, 0.886)), url("asset/gambar/bannerHome.jpg");  /* GANTI */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.banner .konten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .title {
+    font-family: "creation";
+    font-size: 8em;
+}
+
+.banner .slogan {
+    font-family: "pts-bi";
+    font-size: 1.3em;
+}
+
+.gradasi.satu {
+    height: 70px;
+    background-image: linear-gradient(180deg, rgba(23, 17, 13, 0.886), white 80%);
+}
+
+/* MASKOT */
+.maskot {
+    height: calc(100vh - 70px);
+    /* background-image: linear-gradient(90deg, #feebdc, #ffe5d1); */
+    background-color: white;
+    padding: 50px;
+}
+
+.konten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.talk-bubble {
+	width: 60%;
+	background-color: #ffdea5;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.talk-bubble-triangle {
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #ffdea5;
+	border-bottom: 25px solid transparent;
+}
+
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+.talktext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    padding: 70px;
+    font-family: "shadows";
+}
+
+.talktext .selamat-datang {
+    color: #3b301c;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.talktext a {
+    text-decoration: none;
+    color: #3b301c;
+    font-size: 1.5em;
+}
+
+.konten img {
+    max-height: 500px;
+}
+
+@keyframes upanddown {
+    0% {transform: translate(0, 5px);
+    transition: all ease;}
+    50% {transform: translate(0, -5px);}
+}
+
+.talktext a img {
+    animation-name: upanddown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.konten img {
+    height: 100%;
+}
+
+/* KARTU LINK */
+.container-card {
+    padding: 50px;
+    background-color: #2a231e;
+    width: 100%;
+}
+
+.col .card {
+    border-color: #fed286;
+    background-color: #2a231e;
+    color: #fed286;
+    position: static;
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+.col .card .card-img-top {
+    height: 50%;
+    filter: sepia(0.5);
+}
+
+.col .card .card-body {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col a {
+    text-decoration: none;
+}
+
+.col .card:hover {
+    background-image: linear-gradient(180deg, #fed286, #fdca72);
+    color: #2a231e;
+    transform: translateY(-7px);
+}
+
+.col .card:active {
+    transform: translateY(-1px);
+}
+
+.col .card-body .card-title {
+    font-family: "abril";
+}
+
+/* WEB */
+.web {
+    display: flex;
+    height: calc(100vh - 72px);
+}
+
+.tentang, .creator {
+    padding: 40px;
+    background-color: #fed286;
+}
+
+.tentang {
+    border-right: 2px solid #2a231e;
+    width: 50%;
+    padding: 60px;
+}
+
+.tentang .container-tentang {
+    background-image: linear-gradient(180deg, #5b3d25, #4a311e);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+}
+
+.tentang .judul {
+    font-size: 2.2em;
+    font-family: "abril";
+}
+
+.tentang .isi {
+    padding: 30px;
+}
+
+.creator {
+    width: 50%;
+    display: flex;
+}
+
+.web .creator .judul {
+    text-align: center;
+    font-size: 2.2em;
+    font-family: "abril";
+    margin-bottom: 30px;
+    color: #5b3d25;
+}
+
+.container-creator {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.container-pfp {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.terta, .marcel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, #5b3d25, #4a311e);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.creator .nama {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    font-family: "abril";
+    text-align: center;
+}
+
+.creator .isi {
+    width: 100%;
+    height: 50%;
+    font-size: 1.3em;
+}
+
+.pfp {
+    height: 50%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+.pfp.terta {
+    background-image: url("asset/gambar/mascot.png"); 
+    /* GANTI BG IMAGE JADI FOTO*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.pfp.marcel {
+    background-image: url("asset/gambar/pfp.jpg");
+    /* GANTI BG IMAGE JADI FOTO*/
+    background-size: cover;
+    background-position: center 20%;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 200px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1a0b00;
+    color: white;
+}
+
+footer .logo img {
+    max-width: 200px
+}
+
+@media (max-width: 1200px) {
+    .web {
+        height: auto;
+    }
+
+    .web .terta, .web .marcel {
+        width: 50%;
+    }
+
+    .web .pfp {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .web {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .web .tentang, .web .creator {
+        width: 100%;
+    }
+
+    .web .tentang {
+        border: none;
+        border-bottom: 2px solid #4a311e;
+        height: 100vh;
+    }
+
+    .web .container-pfp {
+        width: 80%;
+    }
+
+    .web .terta, .web .marcel {
+        height: 500px;
+    }
+
+    .web .pfp {
+        height: 60%;
+    }
+}
+
+@media (max-width: 870px) {
+.maskot {
+    height: auto;
+    padding: 30px;
+}
+
+.maskot .konten {
+    display: flex;
+    height: 100%;
+}
+
+.maskot .konten .talk-bubble {
+    width: 65%;
+}
+
+.maskot .konten .talk-bubble .talktext {
+    padding: 25px;
+}
+
+.maskot .konten .talk-bubble .talktext .selamat-datang {
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+
+.maskot .konten .talk-bubble .talktext a p {
+    display: none;
+}
+
+.maskot .konten .talk-bubble .talktext a img {
+    width: 50px;
+}
+
+.maskot .konten img {
+    width: 35%;
+}
+
+.talk-bubble-triangle {
+    display: none;
+}
+
+
+.web {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.web .tentang, .web .creator {
+    width: 100%;
+}
+
+.web .tentang {
+    border: none;
+    border-bottom: 2px solid #4a311e;
+    height: auto;
+}
+
+.web .creator .container-creator .container-pfp {
+    display: flex;
+    flex-direction: column;
+}
+
+.web .terta, .web .marcel {
+    height: 500px;
+    width: 100%;
+}
+
+.web .creator .judul {
+    font-size: 4em;
+}
+
+.web .pfp {
+    height: 60%;
+}
+}

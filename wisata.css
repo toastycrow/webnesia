@@ -1,0 +1,507 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: "pts-b";
+    src: url("asset/font/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "pts-bi";
+    src: url("asset/font/PTSerif-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "pts-i";
+    src: url("asset/font/PTSerif-Italic.ttf");
+}
+
+@font-face {
+    font-family: "pts-r";
+    src: url("asset/font/PTSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "abril";
+    src: url("asset/font/AbrilFatface-Regular.ttf");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+body p {
+    font-family: "pts-r";
+}
+
+.cb {
+    clear: both;
+}
+
+/*HEADER*/
+header .nav {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, #140e0a, #000000);
+    color: white;
+    padding: 0 90px;
+}
+
+header .nav .logo img {
+    max-width: 100px;
+}
+
+header .nav .icon {
+    display: flex;
+    gap: 80px;
+}
+
+header .nav .icon .icons {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+header .nav .icon .icons:hover {
+    transform: scale(1.3);
+}
+
+/* BANNER */
+.carousel-inner .carousel-item {
+    height: calc(100vh - 100px); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-inner .carousel-item.one {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.378), rgb(20, 18, 15)), url("asset/gambar/bannerWisata.jpeg");
+}
+
+.carousel-inner .carousel-item.two {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.378), rgb(20, 18, 15)), url("asset/gambar/bannerWisata2.jpg");
+}
+
+.carousel-inner .carousel-item.three {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.378), rgb(20, 18, 15)), url("asset/gambar/bannerWisata3.jpg");
+}
+
+.carousel-inner .carousel-title {
+    font-size: 6em;
+    font-family: "pts-bi";
+}
+
+.carousel-inner .caption {
+    font-size: 1.3em;
+    font-family: "pts-i";
+}
+
+.carousel-inner .carousel-item.one .carousel-container {
+    height: 95%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 200px;
+}
+
+.carousel-inner .carousel-item.two .carousel-container, .carousel-inner .carousel-item.three .carousel-container {
+    height: 95%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 200px;
+}
+
+.carousel-inner .carousel-title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.carousel-inner .caption {
+    font-size: 1.5em;
+}
+
+/* LOKASI */
+.container-lokasi {
+    background-color: rgb(20, 18, 15);
+    padding: 50px;
+}
+
+.lokasi {
+    transition: all 0.7s ease 0s;
+    -webkit-transition: all 0.5s;
+    margin: 50px 0;
+}
+
+.lokasi:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);;
+    transform: scale(1.05);
+}
+
+.lokasi.satu {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, #e9c280 55%), url("asset/gambar/wisataBali.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: right;
+}
+
+.lokasi.dua {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 45%, #e9c280 55%), url("asset/gambar/wisataRaja.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: left;
+}
+
+.lokasi.tiga {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, #e9c280 55%), url("asset/gambar/wisataBromo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    text-align: right;
+}
+
+.konten2 {
+    display: flex;
+    padding: 100px;
+}
+
+.kosong {
+    width: 60%;
+}
+
+.text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-family: "pts-r";
+}
+
+.text .judul {
+    font-weight: bold;
+    font-size: 2.2em;
+    font-family: "abril";
+}
+
+/* LOKASI TAMBAHAN */
+.border-gradasi {
+    background-image: linear-gradient(180deg, rgb(20, 18, 15), #e9c280);
+    height: 50px;
+}
+
+.lokasi-tambahan {
+    background-image: linear-gradient(180deg, #e9c280 85%, #140e0aeb);
+    padding: 20px 0 50px 0;
+    display: flex;
+}
+
+.makanan {
+    width: 45%;
+    padding: 60px 70px;
+    text-align: center;
+}
+
+.container-makan {
+    background-image: linear-gradient(180deg, rgb(231, 185, 106), rgb(255, 215, 145));
+    height: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border: 4px solid white;
+}
+
+.container-makan .gambar:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container-makan .gambar {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.286), rgba(0, 0, 0, 0.608)),url("asset/gambar/makanan.jpg");
+    background-size: cover;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease 0s;
+    -webkit-transition: all 0.5s;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.container-makan .gambar a {
+    text-decoration: none;
+}
+
+.container-makan .gambar a p {
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.container-book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 55%;
+    padding: 40px;
+}
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 80, 0.512);
+    box-shadow: 1px 1px 12px rgba(0, 0, 80, 0.512);
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+}
+
+.cover {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 80, 0.512);
+    box-shadow: 1px 1px 12px rgba(0, 0, 80, 0.512);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+.book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+}
+
+p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.cover.satu {
+    background-image: url("asset/gambar/wisataLombok.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover.dua {
+    background-image: url("asset/gambar/candiBorobudur.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover.tiga {
+    background-image: url("asset/gambar/wisataMonas.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover.empat {
+    background-image: url("asset/gambar/pulauKomodo.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover.lima {
+    background-image: url("asset/gambar/wisataJaya.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover.enam {
+    background-image: url("asset/gambar/wisataToraja.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 200px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(180deg, #140e0a, #1a0b00);
+    color: white;
+}
+
+footer .logo img {
+    max-width: 200px
+}
+
+@media (max-width: 1200px) {
+    .carousel-inner .carousel-item.one .carousel-container, .carousel-inner .carousel-item.two .carousel-container, .carousel-inner .carousel-item.three .carousel-container {
+        width: 100%;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .lokasi-tambahan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lokasi-tambahan .container-book, .lokasi-tambahan .makanan {
+        width: 100%;
+    }
+
+    .container-makan .gambar:hover {
+        transform: scale(1.2);
+    }
+
+    .container-book .book {
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    header .icon .icon2, header .icon .icon3 {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item.one .carousel-container, .carousel-inner .carousel-item.two .carousel-container, .carousel-inner .carousel-item.three .carousel-container {
+        width: 100%;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .carousel-inner .carousel-item .carousel-container .carousel-title {
+        font-size: 3em;
+    }
+
+    .carousel-inner .carousel-item .carousel-container .caption {
+        display: none;
+    }
+
+    .lokasi.satu {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, #e9c280 55%), url("asset/gambar/wisataBali.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: right;
+    }
+    
+    .lokasi.dua {
+        background: linear-gradient(-180deg, rgba(255, 255, 255, 0) 45%, #e9c280 55%), url("asset/gambar/wisataRaja.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: left;
+    }
+    
+    .lokasi.tiga {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, #e9c280 55%), url("asset/gambar/wisataBromo.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 75%;
+        text-align: right;
+    }
+
+    .konten2 {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    
+    .kosong {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .text {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        background-color: #e9c280;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .text .judul {
+        margin-bottom: 10px;
+    }
+
+    .container-book .book {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .konten2 {
+        padding: 10px;
+    }
+
+    .makanan {
+       padding: 40px; 
+    }
+
+    .container-makan {
+        padding: 20px;
+    }
+}

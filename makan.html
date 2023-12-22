@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuliner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="makan.css">
+    <link rel="icon" href="asset/gambar/garuda icon.png" type="image/png">
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <header>
+      <div class="logo">
+        <img src="asset/gambar/LOGO. png.png" alt="logo">
+      </div>
+      <div class="icon">
+        <a href="home.html" target="_blank">
+          <div class="icons icon1">
+            <img src="asset/gambar/home.png" alt="icon1">
+          </div>
+        </a>
+        <div class="icons icon2">
+          <img src="asset/gambar/search.png" alt="icon2">
+        </div>
+        <div class="icons icon3">
+          <img src="asset/gambar/menu.png" alt="icon3">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- BANNER -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item one active">
+            <div class="carousel-container">
+              <div class="carousel-title">Lapar?</div>
+              <div class="caption">Jelajahi Sensasi Kuliner: Kelezatan Menanti di Setiap Sudut Nusantara!</div>
+            </div>
+          </div>
+          <div class="carousel-item two">
+            <div class="carousel-container">
+              <div class="carousel-title">Khas!</div>
+              <div class="caption">Sensasi Autentik: Menelusuri Keunikan yang Membuat Tersenyum di Setiap Hidangan.</div>
+            </div>
+          </div>
+          <div class="carousel-item three">
+            <div class="carousel-container">
+              <div class="carousel-title">Enak!</div>
+              <div class="caption">Selera Menggoda: Kelezatan yang Menghentak Lidah dan Mengundang Kembali</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- PENGANTAR -->
+      <div class="p-dan-nav">
+        <div class="container-pengantar">
+          <div class="text-pengantar">
+            <div class="judul-pengantar">
+              Pengantar
+            </div>
+            <div class="subtitle">
+              Selamat datang dalam penjelajahan kuliner Indonesia, tanah yang mempesona dengan keberagaman rasa. Artikel ini akan membimbing Anda melalui warisan kulinernya yang unik. Dari nasi goreng yang ikonik hingga rendang yang memukau, setiap hidangan menciptakan perpaduan cita rasa yang memikat. Temukan kelezatan makanan khas Indonesia yang menceritakan kisah panjang sejarah, kekayaan budaya, dan keramahan yang memanjakan selera. Bersiaplah untuk merasakan sensasi kuliner yang tak terlupakan di setiap gigitannya.
+            </div>
+          </div>
+          <div class="gambar-pengantar"></div>
+        </div>
+        <div class="judul-nav">
+          QUICK ACCESS
+        </div>
+        <div class="container-nav">
+          <div class="nav-button">
+            <a href="#makanan-berat">
+              <div class="gambar-nav dishes">
+                DISHES
+              </div>
+            </a>
+          </div>
+          <div class="nav-button">
+            <a href="#snacks">
+              <div class="gambar-nav snack">
+                SNACKS
+              </div>
+            </a>
+          </div>
+          <div class="nav-button">
+            <a href="#drinks">
+              <div class="gambar-nav drinks">
+                DRINKS
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-batas satu"></div>
+
+      <!-- MAKANAN BERAT -->
+      <div class="makanan-berat" id="makanan-berat">
+        <div class="container-judul mberat">
+          <div class="judul">DISHES</div>
+          <div class="view">View More</div>
+        </div>
+        <div class="container-collapse">
+          <div class="makanan">
+            <div class="gambar-makan satu">
+              Bakso
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample1">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample1">
+              <div class="collapse-body">
+                Bakso, pentolan rasa Indonesia, bola daging lembut dalam kuah gurih, menciptakan kelezatan klasik yang tak terlupakan.
+              </div>
+            </div>
+          </div>
+          <div class="makanan">
+            <div class="gambar-makan dua">
+              Soto
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample2">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample2">
+              <div class="collapse-body">
+                Soto, sup khas Indonesia, dengan kuah harum rempah dan potongan daging, memberikan kenikmatan yang memanjakan lidah.
+              </div>
+            </div>
+          </div>
+          <div class="makanan">
+            <div class="gambar-makan tiga">
+              Gado-gado
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample3">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample3">
+              <div class="collapse-body">
+                Gado-gado, salad segar Indonesia, paduan sayuran dengan saus kacang, menciptakan cita rasa sehat dan lezat.
+              </div>
+            </div>
+          </div>
+          <div class="makanan">
+            <div class="gambar-makan empat">
+              Sate
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample4">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample4">
+              <div class="collapse-body">
+                Sate, potongan daging tusuk yang dipanggang dan disajikan dengan saus kacang, memberikan cita rasa gurih dan pedas.
+              </div>
+            </div>
+          </div>
+          <div class="makanan">
+            <div class="gambar-makan lima">
+              Nasi Goreng
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample5">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample5">
+              <div class="collapse-body">
+                Nasi goreng, hidangan nasi yang digoreng dengan rempah, telur, dan bumbu khas, menghadirkan cita rasa menggoda.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div class="container-populer">
+          <div class="gambar-populer">
+            <img src="asset/gambar/rendang.jpg" alt="">
+          </div>
+          <div class="text-populer">
+            <div class="collection">COLLECTION</div>
+            <div class="judul">MAKANAN KHAS INDONESIA PALING MENDUNIA</div>
+            <div class="intro">Rendang: Kelezatan Empuk yang Meledak di Lidah</div>
+            <div class="text">
+              Rendang, juara tak terbantahkan kuliner Indonesia, adalah potongan daging yang dimasak dengan santan dan rempah-rempah hingga empuk. Hidangan ini, asalnya dari Minangkabau, memukau dunia dengan cita rasa kaya dan kompleks. Daging yang meresap bumbu pedas, manis, dan gurih ini disajikan dalam keadaan menggoda, setelah proses memasak yang memakan waktu. Rendang tak hanya sekadar makanan, melainkan warisan rasa yang menggambarkan keindahan dan kekayaan kuliner Indonesia. Sejauh mata memandang, rendang adalah kelezatan tak terlupakan yang menari di lidah setiap gigitannya.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SNACKS -->
+      <div class="snacks" id="snacks">
+        <div class="container-judul snacks">
+          <div class="judul">SNACKS</div>
+          <div class="view">View More</div>
+        </div>
+        <div class="container-snacks">
+          <div class="snack satu">
+            <div class="gambar-snack">
+              Cireng  
+            </div>
+            <div class="text-snack">
+              Cemilan khas Sunda yang terbuat dari aci (tepung kanji) yang dibumbui, dipotong panjang, dan digoreng hingga krispi. Cireng sering disajikan dengan saus kacang atau sambal, menambahkan cita rasa yang lezat.
+            </div>
+          </div>
+          <div class="snack dua">
+            <div class="gambar-snack">
+              Klepon  
+            </div>
+            <div class="text-snack">
+              Kudapan Indonesia berupa bola ketan berisi gula merah, dibalut kelapa parut. Rasanya manis dan lembut berkat penggunaan daun pandan dalam proses pembuatannya.
+            </div>
+          </div>
+          <div class="snack tiga">
+            <div class="gambar-snack">
+              Rempeyek  
+            </div>
+            <div class="text-snack">
+              Kripik yang terbuat dari adonan tepung beras yang dicampur kelapa parut, kemudian digoreng hingga kering. Rempeyek biasanya diisi dengan kacang tanah dan udang, memberikan rasa gurih dan renyah.
+            </div>
+          </div>
+          <div class="snack empat">
+            <div class="gambar-snack">
+              Keripik Tempe 
+            </div>
+            <div class="text-snack">
+              Cemilan ringan yang terbuat dari tempe yang dipotong tipis dan digoreng kering. Keripik tempe memberikan cita rasa gurih dan renyah yang cocok sebagai pendamping minum.
+            </div>
+          </div>
+          <div class="snack lima">
+            <div class="gambar-snack">
+              Martabak Telur  
+            </div>
+            <div class="text-snack">
+              Hidangan Indonesia berisi adonan tepung dan telur yang digoreng. Daging cincang dan bumbu rempah memberikan cita rasa gurih dan lezat. Martabak telur sering dinikmati sebagai camilan atau hidangan sarapan.
+            </div>
+          </div>
+          <div class="snack enam">
+            <div class="gambar-snack">
+              Batagor 
+            </div>
+            <div class="text-snack">       
+              Singkatan dari bakso tahu goreng. Hidangan Indonesia berisi bakso, tahu, dan kulit pangsit yang digoreng. Disajikan dengan saus kacang, kecap, dan bawang goreng, batagor memberikan kombinasi rasa yang gurih dan pedas.
+            </div>
+          </div>
+          <div class="snack tujuh">
+            <div class="gambar-snack">
+              Lemper  
+            </div>
+            <div class="text-snack">
+              Kudapan tradisional Indonesia, terbuat dari ketan berisi ayam suwir yang dibalut daun pisang, memberikan citarasa gurih dan tekstur kenyal yang lezat.
+            </div>
+          </div>
+          <div class="snack delapan">
+            <div class="gambar-snack">
+              Otak-otak 
+            </div>
+            <div class="text-snack">
+              Otak-otak adalah makanan berisi ikan bumbu, dibungkus dalam daun pisang, kemudian dipanggang atau dibakar, menciptakan hidangan dengan rasa gurih dan pedas.
+            </div>
+          </div>
+          <div class="snack sembilan">
+            <div class="gambar-snack">
+              Pempek  
+            </div>
+            <div class="text-snack">
+              Pempek, hidangan Palembang, terbuat dari adonan tepung ikan dan sagu, menciptakan kombinasi unik dari tekstur kenyal dan rasa lezat, menjadi salah satu kuliner ikonik Indonesia.
+            </div>
+          </div>
+          <div class="snack sepuluh">
+            <div class="gambar-snack">
+              Kue Lumpur  
+            </div>
+            <div class="text-snack">
+              Kudapan tradisional Indonesia, terbuat dari tepung beras, kelapa parut, dan gula kelapa, dengan tekstur lembut dan rasa manis yang lezat.
+            </div>
+          </div>
+          <div class="snack sebelas">
+            <div class="gambar-snack">
+              Putu Mayang 
+            </div>
+            <div class="text-snack">
+              Kudapan Indonesia berwarna, terdiri dari adonan sagu yang disajikan dengan kelapa parut dan siraman air gula aren, menciptakan pengalaman rasa unik.
+            </div>
+          </div>
+          <div class="snack duabelas">
+            <div class="gambar-snack">
+              Dodol 
+            </div>
+            <div class="text-snack">
+              Kudapan tradisional Indonesia, terbuat dari ketan, kelapa, dan gula aren yang dimasak hingga kental, memiliki rasa manis yang lezat dan tekstur kenyal.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MINUMAN -->
+      <div class="minuman-khas" id="drinks">
+        <div class="container-judul minuman">
+          <div class="judul">DRINKS</div>
+          <div class="view">View More</div>
+        </div>
+        <div class="container-collapse">
+          <div class="minuman">
+            <div class="gambar-minum satu ">
+              Kopi Tubruk 
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample1">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample1">
+              <div class="collapse-body">
+                Kopi Tubruk, kopi khas Indonesia yang dimasak bersama gula, menciptakan minuman pekat dan manis dengan sentuhan tradisional setiap tegukan.
+              </div>
+            </div>
+          </div>
+          <div class="minuman">
+            <div class="gambar-minum dua">
+              Wedang Jahe 
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample2">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample2">
+              <div class="collapse-body">
+                Wedang Jahe, minuman hangat dengan kombinasi jahe, gula merah, dan rempah-rempah, menciptakan kehangatan dalam setiap tegukan.
+              </div>
+            </div>
+          </div>
+          <div class="minuman">
+            <div class="gambar-minum tiga">
+              Bajigur 
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample3">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample3">
+              <div class="collapse-body">            
+                Bajigur, minuman hangat yang memanjakan lidah dengan campuran santan, gula merah, jahe, dan kelapa parut, menghadirkan kelezatan tropis.
+              </div>
+            </div>
+          </div>
+          <div class="minuman">
+            <div class="gambar-minum empat">
+              Sekoteng  
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample4">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample4">
+              <div class="collapse-body">
+                Sekoteng, menggoda dengan campuran biji-bijian, potongan pisang, dan kolang-kaling dalam kuah jahe, menciptakan kehangatan dan kelezatan.
+              </div>
+            </div>
+          </div>
+          <div class="minuman">
+            <div class="gambar-minum lima">
+              Es kelapa muda  
+            </div>
+            <div class="d-inline-flex gap-1" data-bs-toggle="collapse" href="#collapseExample5">
+              <div class="detail-button">
+                Details
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample5">
+              <div class="collapse-body">
+                Es Kelapa Muda adalah minuman segar Indonesia yang menyegarkan dengan air kelapa muda dan es serut, menciptakan kelezatan alami dan kesegaran yang khas.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div class="container-populer">
+          <div class="text-populer">
+            <div class="collection">COLLECTION</div>
+            <div class="judul">MINUMAN ES INI BISA MELAWAN GLOBAL WARMING?</div>
+            <div class="intro">Es Doger: Kesegarang Manis Khas Indonesia</div>
+            <div class="text">
+              Es Doger, minuman segar khas Indonesia, menawarkan kelezatan unik dengan campuran kelapa parut, kacang hijau, dan agar-agar merah. Disajikan dengan serutan es, sirup gula merah, santan kental, potongan cincau, bahkan roti tawar, Es Doger menggoda dengan rasa manis gula merah, sensasi creamy dari santan, dan tambahan tekstur dari kacang hijau dan kelapa parut. Keberagaman warna dan cita rasa menciptakan minuman yang tidak hanya menyegarkan tapi juga mencerminkan kekayaan kuliner Indonesia. Sering dijumpai di warung-warung tradisional, Es Doger menjadi pilihan favorit di kalangan pencinta kuliner tradisional yang ingin menikmati keunikan dan kelezatan khas Indonesia, terutama di hari-hari yang panas.
+            </div>
+          </div>
+          <div class="gambar-populer">
+            <img src="asset/gambar/esdoger.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="logo">
+        <img src="asset/gambar/LOGO. png.png" alt="logo">
+      </div>
+    </footer>
+  </body>
+</html>

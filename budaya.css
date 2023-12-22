@@ -1,0 +1,300 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+@font-face {
+    font-family: "pts-b";
+    src: url("asset/font/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "pts-bi";
+    src: url("asset/font/PTSerif-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "pts-i";
+    src: url("asset/font/PTSerif-Italic.ttf");
+}
+
+@font-face {
+    font-family: "pts-r";
+    src: url("asset/font/PTSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "abril";
+    src: url("asset/font/AbrilFatface-Regular.ttf");
+}
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgb(214, 168, 83);
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+    /*HEADER*/
+    header .nav {
+      width: 100%;
+      height: 100px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-image: linear-gradient(180deg, #0f0700, #1d0d00);
+      color: white;
+      padding: 0 80px;
+  }
+  
+  header .nav .logo img {
+    max-width: 100px;
+}
+
+header .nav .icons {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+header .nav .icons:hover {
+    transform: scale(1.3);
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    height: calc(100vh - 100px);
+  }
+
+
+.banner .image {
+  background-image: url("asset/gambar/maskotbudaya.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+
+.banner .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+  width: 70%;
+  background-color: #ffdea5;
+  color: #1a0b00;
+}
+
+.banner .text h3 {
+  font-family: "abril";
+  font-size: 4em;
+  padding: 10px;
+  border-bottom: 2px solid #1a0b00;
+}
+
+.banner .text .desc {
+  padding: 20px;
+}
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin: 15vh;
+    cursor: pointer;
+    background-color: #e6e0d6;
+    box-shadow: 0 6px 10px rgba(49, 38, 38, 0.08), 0 0 6px rgba(0,0,0,0.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  }
+
+  /* CARD HOVER */
+  .card:hover{
+transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(151, 136, 104, 0.37), 0 4px 8px rgba(255, 215, 37, 0.06);
+ background-color: rgb(44, 31, 14);
+ color: rgb(255, 223, 180);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(155, 113, 35);
+}
+
+.container-budaya {
+    background-color: rgb(20, 18, 15);
+    padding: 50px;
+}
+
+.budaya {
+    transition: all 0.7s ease 0s;
+    -webkit-transition: all 0.5s;
+    margin: 50px 0;
+}
+
+.budaya:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(151, 136, 104, 0.37), 0 4px 8px rgba(255, 215, 37, 0.06);
+  background-color: rgb(44, 31, 14);
+  color: rgb(255, 223, 180);
+}
+
+.budaya.satu {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://img.okezone.com/content/2019/12/09/406/2139655/jauh-dari-teknologi-lihat-gaya-hidup-orang-dayak-di-desa-budaya-pampang-G4plP9pE01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75% center;
+    text-align: right;
+}
+
+.budaya.dua {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://www.ngetren.co.id/wp-content/uploads/2017/07/ewr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: left;
+}
+
+.budaya.tiga {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://assets-a1.kompasiana.com/items/album/2020/09/09/tato-5f584b21838cc66fb25dc7f2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    text-align: right;
+}
+
+.budaya.empat {
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://th.bing.com/th/id/R.9c31ef628ebf6bf1a54e81bffade0cb7?rik=MBdT%2b7JwYVn8lQ&riu=http%3a%2f%2fwww.getsready.com%2fwp-content%2fuploads%2f2014%2f04%2fborobudur-2.jpg&ehk=VL8%2fZ3S%2fQGV5vLcCtVjOEi0DQQPSUdzb%2fYQidCyfc00%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: left;
+}
+
+.konten2 {
+    display: flex;
+    padding: 100px;
+}
+
+.kosong {
+    width: 60%;
+}
+
+.text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-family: "pts-r";
+}
+
+.text .judul {
+    font-weight: bold;
+    font-size: 2.2em;
+    font-family: "abril";
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1a0b00;
+  color: white;
+}
+
+footer .logo img {
+  max-width: 200px
+}
+
+@media(max-width: 1200px) {
+  .banner {
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner .image {
+    display: none;
+  }
+
+  .banner .text {
+    width: 100%;
+  }
+
+  .budaya.satu {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://kikomunal-indonesia.dgip.go.id/storage/app/uploads/public/5fd/74f/692/5fd74f692f99f353461129.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      text-align: right;
+  }
+  
+  .budaya.dua {
+      background: linear-gradient(-180deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://bpkpenabur.or.id/bekasi/smak-penabur-harapan-indah/berita/berita-lainnya/rambu-solo-upacara-kematian-toraja-yang-digemari-wisatawan-mancanegara");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      text-align: left;
+  }
+  
+  .budaya.tiga {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://assets-a1.kompasiana.com/items/album/2020/09/09/tato-5f584b21838cc66fb25dc7f2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center 75%;
+      text-align: right;
+  }
+
+  .budaya.empat {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, rgb(214, 168, 83) 55%), url("https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2001162996890/Candi-Borobudur-Tickets-8d6d442d-7da5-4217-bc64-6e95dc0486cd.jpeg?_src=imagekit&tr=c-at_max,h-260,q-100,w-412");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center 75%;
+      text-align: right;
+  }
+
+  .konten2 {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+  }
+  
+  .kosong {
+      width: 100%;
+      height: 50%;
+  }
+  
+  .text {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      background-color: rgb(214, 168, 83);
+      text-align: center;
+      padding: 50px;
+  }
+
+  .text .judul {
+      margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .konten2 {
+      padding: 10px;
+  }
+}
